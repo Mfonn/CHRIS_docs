@@ -329,7 +329,7 @@ html.is-clipped--nav{
     bottom:0;
     left:0
 }
-.nav-panel-explore:not(:first-child){
+.-panel-explore:not(:first-child){
     top:auto;
     max-height:calc(50% + 2.5rem)
 }
@@ -406,7 +406,7 @@ html.is-clipped--nav{
     -ms-flex-wrap:wrap;
     flex-wrap:wrap;
     padding-left:0;
-    margin-top:-.25rem;
+    margin-top: 0.75rem;
     line-height:1;
     list-style:none
 }

@@ -12,75 +12,51 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="../..">ChRIS Docs</a>
-      <button class="navbar-burger" data-target="topbar-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <div id="topbar-nav" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Products</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Product A</a>
-            <a class="navbar-item" href="#">Product B</a>
-            <a class="navbar-item" href="#">Product C</a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Services</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Service A</a>
-            <a class="navbar-item" href="#">Service B</a>
-            <a class="navbar-item" href="#">Service C</a>
-          </div>
-        </div>
-        <div class="navbar-item">
-          <span class="control">
-            <a class="button is-primary" href="#">Download</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </nav>
+      <img src="../logo.png" alt="ChRIS logo">
+      <a class="navbar-item" href="http://chrisproject.org/">The ChRIS Project</a>
+
 </header>
 <div class="body">
 <div class="nav-container" data-component="ChRISDocs" data-version="ChRIS_store_ui">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-explore is-active" data-panel="explore">
-  <div class="context">
-    <span class="title">Antora docs</span>
-    <span class="version">ChRIS_store_ui</span>
-  </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../pman/pman_README.html">Antora docs</a>
+      <a class="title" href="../pman/pman_README.html">ChRIS documentation</a>
       <ul class="versions">
-        <li class="version is-latest">
-          <a href="../pman/pman_README.html">pman</a>
-        </li>
-        <li class="version">
-          <a href="../latest/ChRIS_ui_README.html">latest</a>
-        </li>
-        <li class="version">
-          <a href="../ChRIS_ultron_backEnd/ChRIS_ultron_backEnd_README.html">ChRIS_ultron_backEnd</a>
-        </li>
-        <li class="version">
-          <a href="../ChRIS_ui/ChRIS_ui_README.html">ChRIS_ui</a>
-        </li>
-        <li class="version is-current">
+        <li class="version is-current is-latest">
           <a href="ChRIS_store_ui_README.html">ChRIS_store_ui</a>
+          <p id="title_summary">UI for the ChRIS Store.</p>
         </li>
         <li class="version">
           <a href="../ChRIS_docs/CHRIS_docs_README.html">ChRIS_docs</a>
+          <p id="title_summary">This page presents a quick overview of ChRIS, followed by some links to more resources, papers, and talks.</p>
+        </li>
+        <li class="version">
+          <a href="../ChRIS_ui/ChRIS_ui_README.html">ChRIS_ui</a>
+          <p id="title_summary">This repository contains the reference UI for ChRIS, allowing users to create and interact with dynamic containerized workflows.
+          The ChRIS UI is written primarily in TypeScript and React, and uses the PatternFly React pattern library.</p>
+        </li>
+        <li class="version">
+          <a href="../ChRIS_ultron_backEnd/ChRIS_ultron_backEnd_README.html">ChRIS_ultron_backEnd</a>
+          <p id="title_summary">The core backend service for the ChRIS distributed software platform, also known by the anacronym <em>CUBE</em>.
+          Internally the service is implemented as a Django-PostgreSQL project offering a collection+json REST API.
+          Important ancillary components include the pfcon and pman file transfer and remote process management microservices.</p>
         </li>
         <li class="version">
           <a href="../ChRIS_store/ChRIS_store_README.html">ChRIS_store</a>
+          <p id="title_summary">This page describes how to quickly get the set of services comprising the backend up and running for development and how to run the automated tests.
+          A production deployment of the ChRIS store backend services is also explained.</p>
         </li>
+        <li class="version">
+          <a href="../pman/pman_README.html">pman</a>
+          <p id="title_summary"><em>pman</em>, which once stood for process manager, is a Flask application providing an API for creating jobs with various schedulers e.g.
+            Kubernetes, Docker Swarm, and SLURM.
+            It basically translates its own JSON interface to requests for the various supported backends.</p>
+        </li>
+
+
       </ul>
     </li>
   </ul>
