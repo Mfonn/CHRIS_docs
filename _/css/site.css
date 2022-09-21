@@ -2016,8 +2016,15 @@ footer.footer{
 }
 
 
-.title_summary {
-    border: 1px #808080;
+#title_summary {
+    border: 5px #808080;
     margin: auto;
-    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 101%;
+    border-style: inset;
+    border-radius: 5%;
+    color: #585858;
+    padding: 5%;
+    background-color: #ffffff;
 }
