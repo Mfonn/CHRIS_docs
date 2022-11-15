@@ -1,7 +1,7 @@
 ---
-authors: Rudolph Pienaar <rudolph.pienaar@childrens.harvard.edu>
-name: "All DCM to JPG (reslice) and NIfTI (dcm2niix) v20220804-1"
-description: "Convert all input DICOMs in parent node to JPG (per series organization), reslicing into x/y/z and also convert to NIfTI"
+authors: Sandip Samal <sandip.samal@childrens.harvard.edu>
+name: "FPMMID on Nifti from DCM v20220926_v1"
+description: "Convert all input DICOMs in parent node to JPG (per series organization), reslicing into x/y/z and also convert to NIfTI and run FPMMID to do a semantic segmentation"
 category: Imaging
 locked: false
 plugin_tree:
@@ -26,4 +26,9 @@ plugin_tree:
     previous: root-group-copy
     plugin_parameter_defaults:
       d: 9
-
+  - title: nifti-to-segmented-nifi
+    plugin: pl-fpmmid v1.1.9
+    previous: dicom-to-nifti
+    plugin_parameter_defaults:
+      inputFileFilter: "**/*.nii"
+      preserveInputNames: True
